@@ -120,8 +120,6 @@ public class VueSaisieOuvrage extends Vue {
 		comboBox.setBounds(170, 96, 218, 24);
 		contentPane.add(comboBox);
 		comboBox.setEditable(true);
-		comboBox.addItem("Option 1");
-		comboBox.addItem("Option 2");
 		
 		Set<String> keys = controleur.getAuteurs().keySet();
 		Iterator<String> ite = keys.iterator();
@@ -130,7 +128,7 @@ public class VueSaisieOuvrage extends Vue {
 			String str = ite.next();
 			// 1er methode
 			Auteur auteur = controleur.getAuteurs().get(str);
-			comboBox.addItem(auteur.getNomAuteur()+" "+auteur.getPrenomAuteur());
+			comboBox.addItem(auteur.getPrenomAuteur()+" "+auteur.getNomAuteur());
 			//2eme
 			//comboBox.addItem(str);
 		//	ite.next();

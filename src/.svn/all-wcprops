@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src
+END
+StartApplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/phycctv_omgl/!svn/ver/2/biblioGraphiqueV2/src/StartApplication.java
+END
+VueSaisieExemplaire.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/phycctv_omgl/!svn/ver/2/biblioGraphiqueV2/src/VueSaisieExemplaire.java
+END
+VueMenuBiblioOld.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/phycctv_omgl/!svn/ver/2/biblioGraphiqueV2/src/VueMenuBiblioOld.java
+END
+Parution.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src/Parution.java
+END
+Message.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/phycctv_omgl/!svn/ver/2/biblioGraphiqueV2/src/Message.java
+END
+Vue.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/phycctv_omgl/!svn/ver/2/biblioGraphiqueV2/src/Vue.java
+END
+Controleur.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src/Controleur.java
+END
+VueSaisieOuvrage.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src/VueSaisieOuvrage.java
+END
+Auteur.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/phycctv_omgl/!svn/ver/2/biblioGraphiqueV2/src/Auteur.java
+END
+Ouvrage.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/phycctv_omgl/!svn/ver/2/biblioGraphiqueV2/src/Ouvrage.java
+END
+ESDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/phycctv_omgl/!svn/ver/2/biblioGraphiqueV2/src/ESDate.java
+END
+VueMenuBiblio.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src/VueMenuBiblio.java
+END
+Periodique.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src/Periodique.java
+END
+Lecteur.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src/Lecteur.java
+END
+Quota.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src/Quota.java
+END
+VueConsultOuvrage.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/phycctv_omgl/!svn/ver/2/biblioGraphiqueV2/src/VueConsultOuvrage.java
+END
+VueRechercheAuteur.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src/VueRechercheAuteur.java
+END
+Article.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src/Article.java
+END
+Exemplaire.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/phycctv_omgl/!svn/ver/2/biblioGraphiqueV2/src/Exemplaire.java
+END
+Emprunt.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/phycctv_omgl/!svn/ver/4/biblioGraphiqueV2/src/Emprunt.java
+END
