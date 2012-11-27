@@ -31,6 +31,7 @@ public class Controleur implements Serializable{
 		// Ensemble des ouvrages de la bibliothèque
 		private HashMap<String, Ouvrage> _ouvrages;
 		private HashMap<String, Auteur> auteurs;
+		private HashMap<String, Periodique> periodiques;
 		
 		// la liste des vues. La 1ere est toujours la vue Menu Principal. La dernière est la vue active.
 		private LinkedList<Vue> _vues;
@@ -43,6 +44,7 @@ public class Controleur implements Serializable{
 		public Controleur() {
 			this.setOuvrages(new HashMap<String, Ouvrage>());
 			this.setAuteurs(new HashMap<String, Auteur>());
+			this.setPeriodiques(new HashMap<String, Periodique>());
 			_vues = new LinkedList<Vue>();
 		} // Fin Controleur
 
@@ -75,6 +77,22 @@ public class Controleur implements Serializable{
 		}// Fin setOuvrages
 		
 		/**
+		 * Ajoute un periodique à l'ensemble des periodiques de la bibliothèque.
+		 * @param periodique 	Periodique à ajouter
+		 * @param issn 	code ISSN de ce périodique
+		 */
+		private void setPeriodique(Periodique periodique, String issn) {
+			this.getPeriodiques().put(issn, periodique);
+		} // Fin setOuvrage
+		
+		/**
+		 * @param periodiques hashtable du periodique à affecter
+		 */
+		private void setPeriodiques(HashMap<String, Periodique> periodiques) {
+			this.periodiques = periodiques;
+		}// Fin setPeriodiques
+		
+		/**
 		 * ajoute ou enlève la vue active courante de la liste des vues
 		 * @param vue  la vue à affecter
 		 */
@@ -100,6 +118,10 @@ public class Controleur implements Serializable{
 			return auteurs;
 		}
 		
+		public HashMap<String, Periodique> getPeriodiques() {
+			return periodiques;
+		}
+		
 		/**
 		 * Accès à un ouvrage par son numéro ISBN
 		 * @param isbn 	le code ISBN de l'ouvrage cherché
@@ -107,6 +129,15 @@ public class Controleur implements Serializable{
 		 */
 		private Ouvrage getOuvrage(String isbn) {
 			return this.getOuvrages().get(isbn);
+		} // Fin getOuvrage
+		
+		/**
+		 * Accès à un periodique par son numéro ISSN
+		 * @param issn 	le code issn du périodique cherché
+		 * @return le périodique qui a l'ISSN indiqué
+		 */
+		private Periodique getPeriodique(String issn) {
+			return this.getPeriodiques().get(issn);
 		} // Fin getOuvrage
 
 		/**
@@ -134,6 +165,22 @@ public class Controleur implements Serializable{
 		public void menuBiblio() {
 			try {this.setVue(new VueMenuBiblio(this));
 				this.getVueMenu().setVisible(true); 	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		/**
+		 * Cas d'utilisation : paramétrage des quotas
+		 * Création et affichage de la fenêtre de paramétrage des quotas
+		 */
+		
+		public void parametrageQuotas() {
+			try {this.setVue (new VueQuota(this));
+			// le Menu est caché
+				this.getVueMenu().setVisible(false); 	
+			// la vue courante est VueConsultOuvrage
+				this.getVue().setEtat(Vue.initiale);
+				this.getVue().setVisible(true);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -198,7 +245,112 @@ public class Controleur implements Serializable{
 			} catch (Exception e) {
 			e.printStackTrace();
 			}
-		}		
+		}
+		/**
+		 * cas d'utilisation : Nouveau périodique
+		 * Création et affichage de la fenêtre de nouveau périodique
+		 */
+		public void nouveauPeriodique() {
+			try {this.setVue(new VueNouveauPeriodique(this));
+			// le Menu est caché
+				this.getVueMenu().setVisible(false); 
+			// la vue courante est VueSaisieOuvrage
+				this.getVue().setEtat(Vue.initiale);
+				this.getVue().setVisible(true);
+			} catch (Exception e) {
+			e.printStackTrace();
+			}
+		}
+		/**
+		 * cas d'utilisation : Nouvelle parution
+		 * Création et affichage de la fenêtre d'une nouvelle parution
+		 */
+		public void nouvelleParution() {
+			try {this.setVue(new VueNouvelleParution(this));
+			// le Menu est caché
+				this.getVueMenu().setVisible(false); 
+			// la vue courante est VueSaisieOuvrage
+				this.getVue().setEtat(Vue.initiale);
+				this.getVue().setVisible(true);
+			} catch (Exception e) {
+			e.printStackTrace();
+			}
+		}
+		/**
+		 * cas d'utilisation : Consultation d'un périodique
+		 * Création et affichage de la fenêtre de consultation d'un périodique
+		 */
+		public void consultationPeriodique() {
+			try {this.setVue(new VueConsultationPeriodique(this));
+			// le Menu est caché
+				this.getVueMenu().setVisible(false); 
+			// la vue courante est VueSaisieOuvrage
+				this.getVue().setEtat(Vue.initiale);
+				this.getVue().setVisible(true);
+			} catch (Exception e) {
+			e.printStackTrace();
+			}
+		}
+		/**
+		 * cas d'utilisation : Nouveau lecteur
+		 * Création et affichage de la fenêtre de nouveau lecteur
+		 */
+		public void nouveauLecteur() {
+			try {this.setVue(new VueNouveauLecteur(this));
+			// le Menu est caché
+				this.getVueMenu().setVisible(false); 
+			// la vue courante est VueSaisieOuvrage
+				this.getVue().setEtat(Vue.initiale);
+				this.getVue().setVisible(true);
+			} catch (Exception e) {
+			e.printStackTrace();
+			}
+		}
+		/**
+		 * cas d'utilisation : Consultation d'un périodique
+		 * Création et affichage de la fenêtre de consultation d'un lecteur
+		 */
+		public void consultationLecteur() {
+			try {this.setVue(new VueConsultationLecteur(this));
+			// le Menu est caché
+				this.getVueMenu().setVisible(false); 
+			// la vue courante est VueSaisieOuvrage
+				this.getVue().setEtat(Vue.initiale);
+				this.getVue().setVisible(true);
+			} catch (Exception e) {
+			e.printStackTrace();
+			}
+		}
+		/**
+		 * cas d'utilisation : Consultation d'un périodique
+		 * Création et affichage de la fenêtre de consultation d'un lecteur
+		 */
+		public void empruntExemplaire() {
+			try {this.setVue(new VueEmpruntExemplaire(this));
+			// le Menu est caché
+				this.getVueMenu().setVisible(false); 
+			// la vue courante est VueSaisieOuvrage
+				this.getVue().setEtat(Vue.initiale);
+				this.getVue().setVisible(true);
+			} catch (Exception e) {
+			e.printStackTrace();
+			}
+		}
+		/**
+		 * cas d'utilisation : Consultation d'un périodique
+		 * Création et affichage de la fenêtre de consultation d'un lecteur
+		 */
+		public void retourExemplaire() {
+			try {this.setVue(new VueRetourExemplaire(this));
+			// le Menu est caché
+				this.getVueMenu().setVisible(false); 
+			// la vue courante est VueSaisieOuvrage
+				this.getVue().setEtat(Vue.initiale);
+				this.getVue().setVisible(true);
+			} catch (Exception e) {
+			e.printStackTrace();
+			}
+		}
 		/**
 		 * fermeture de la fenêtre vue
 		 * lors de la fermeture de la fenêtre principale de l'application sauvegarde des objets sérialisés 
@@ -286,6 +438,29 @@ public class Controleur implements Serializable{
 		} // Fin rechOuvrage
 		
 		/**
+		 * Accès à un ouvrage par son numéro ISBN
+		 * Invoqué dans VueConsultOuvrage et VueSaisieExemplaire
+		 * @param isbn 	le code ISBN de l'ouvrage cherché
+		 * @return l'ouvrage qui a l'ISBN indiqué ou null
+		 * affiche un message d'erreur si l'ouvrage n'est pas trouvé
+		 */
+		public Periodique rechPeriodique(String issn) {
+			Periodique per = this.getPeriodique(issn);
+			if (per == null) {
+				Message dialog = new Message("Periodique inconnu");
+			}
+			else {
+				// la vue courante est VueConsultationPeriodique
+				if (this.getVue() instanceof VueConsultationPeriodique){
+					// le contrôleur modifie l'état de la vue
+					this.getVue().setEtat(Vue.finale);
+					((VueConsultationPeriodique)this.getVue()).alimente(per);
+					}
+			}
+			return per;
+		} // Fin rechOuvrage
+		
+		/**
 		 * Création d'un exemplaire d'ouvrage 
 		 * Invoqué dans VueSaisieExemplaire
 		 * @param ouv l'ouvrage  dateRecep la date de réception de l'exemplaire	
@@ -365,6 +540,34 @@ public class Controleur implements Serializable{
 					}
 				}
 			}
-		} // Fin nouvOuvrage
+		/**
+		 * Création d'un périodique
+		 * Invoqué dans VueNouveauPeriodique
+		 * affiche un message de confirmation après l'enregistrement ou un message d'erreur 
+		 */
+		public void nouvPeriodique(String issn, String nomPerio) {
+			// vérification de la présence des infos obligatoires
+			if ((issn.length() == 0) || (nomPerio.length() == 0)){
+					Message dialog = new Message("Tous les champs sont obligatoires");
+					}
+			else {
+				if (this.getPeriodique(issn)== null) {
+				// Instanciation du périodique
+				
+					
+					Periodique periodique = new Periodique(issn, nomPerio);
+				// Ajout de l'ouvrage dans l'ensemble des ouvrages de la bibliothèque
+					this.setPeriodique(periodique, issn);
+					
+					Message dialog = new Message("Périodique enregistré");
+					this.fermerVue (this.getVue());
+					} 
+				else 
+				{
+					Message dialog = new Message("Périodique déjà présent");
+				}
+			}
+		}
+	} // Fin nouvOuvrage
 		
 

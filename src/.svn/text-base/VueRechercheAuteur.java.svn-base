@@ -13,6 +13,10 @@ import java.awt.event.ItemEvent;
 
 public class VueRechercheAuteur extends Vue {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JComboBox comboBox = new JComboBox();
 

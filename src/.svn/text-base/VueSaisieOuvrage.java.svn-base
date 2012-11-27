@@ -38,7 +38,7 @@ public class VueSaisieOuvrage extends Vue {
 		super(controleur);
 		setTitle("Enregistrement d'un nouvel ouvrage");
 		//setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); 
-		setBounds(100, 100, 450, 300);
+		setBounds(400, 300, 450, 300);
 		contentPane = new JPanel();
 		this.addWindowListener (new WindowAdapter() {
 			public void windowClosing (WindowEvent e) {
@@ -133,16 +133,6 @@ public class VueSaisieOuvrage extends Vue {
 			//comboBox.addItem(str);
 		//	ite.next();
 			//, auteur.getNomAuteur()
-		}
-	}
-	
-	public void setEtat (int etat){
-		switch (etat) {
-		case initiale: {
-			buttonEnreg.setEnabled(true);
-			buttonAnnuler.setEnabled(true);
-			break;
-			}
 		}
 	}
 }

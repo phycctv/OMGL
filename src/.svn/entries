@@ -1,14 +1,14 @@
 10
 
 dir
-4
+8
 http://phycctv.unfuddle.com/svn/phycctv_omgl/biblioGraphiqueV2/src
 http://phycctv.unfuddle.com/svn/phycctv_omgl
 
 
 
-2012-11-21T15:48:24.395046Z
-4
+2012-11-27T09:48:31.491324Z
+8
 phycctv
 
 
@@ -100,10 +100,10 @@ file
 
 
 
-2012-11-21T15:48:46.000000Z
-261b8a5d629b8b9f8a1c71ffcb9514e7
-2012-11-21T15:48:24.395046Z
-4
+2012-11-27T19:18:15.000000Z
+85a9c8136a55c4ce71db63cfdcd89b78
+2012-11-27T09:48:31.491324Z
+8
 phycctv
 
 
@@ -126,7 +126,7 @@ phycctv
 
 
 
-12364
+18824
 
 ESDate.java
 file
@@ -536,16 +536,118 @@ phycctv
 
 6364
 
+VueConsultationLecteur.java
+file
+
+
+
+
+2012-11-26T08:20:33.000000Z
+c208c860292fde0122078338cff872ad
+2012-11-26T08:20:15.766431Z
+5
+phycctv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+811
+
+VueConsultationPeriodique.java
+file
+
+
+
+
+2012-11-27T19:18:15.000000Z
+a10e645f127365897b905e61a5b37472
+2012-11-27T09:48:31.491324Z
+8
+phycctv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3717
+
+VueEmpruntExemplaire.java
+file
+
+
+
+
+2012-11-26T08:20:33.000000Z
+8b7f34876bb95915d394ff080ce7c750
+2012-11-26T08:20:15.766431Z
+5
+phycctv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+803
+
 VueMenuBiblio.java
 file
 
 
 
 
-2012-11-21T15:48:46.000000Z
-d4f3dbba3efd99722ea220e80713cc53
-2012-11-21T15:48:24.395046Z
-4
+2012-11-26T08:20:33.000000Z
+791dbb0306408986411d81247519d7d0
+2012-11-26T08:20:15.766431Z
+5
 phycctv
 
 
@@ -568,18 +670,18 @@ phycctv
 
 
 
-3401
+6262
 
-VueMenuBiblioOld.java
+VueNouveauLecteur.java
 file
 
 
 
 
-2012-11-21T15:40:56.000000Z
-3ef9708c23913ed6574e7fe268298387
-2012-11-14T16:22:17.614630Z
-2
+2012-11-26T08:20:33.000000Z
+f6c1c75d06284fda4865fd3938c9b566
+2012-11-26T08:20:15.766431Z
+5
 phycctv
 
 
@@ -602,7 +704,109 @@ phycctv
 
 
 
-3185
+786
+
+VueNouveauPeriodique.java
+file
+
+
+
+
+2012-11-27T19:18:15.000000Z
+c8a8ac38f7768b9ea277422a78134160
+2012-11-26T09:05:50.607005Z
+6
+phycctv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2308
+
+VueNouvelleParution.java
+file
+
+
+
+
+2012-11-26T08:20:33.000000Z
+4a0a45ac69edce8857955eceb1021c1e
+2012-11-26T08:20:15.766431Z
+5
+phycctv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+794
+
+VueQuota.java
+file
+
+
+
+
+2012-11-26T08:20:33.000000Z
+47e4575a5d8ab7b3492446f344120fb6
+2012-11-26T08:20:15.766431Z
+5
+phycctv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+769
 
 VueRechercheAuteur.java
 file
@@ -610,10 +814,10 @@ file
 
 
 
-2012-11-21T15:48:46.000000Z
-918044cdaa28f73cbebfc583d489e1f5
-2012-11-21T15:48:24.395046Z
-4
+2012-11-26T08:20:33.000000Z
+c3f95dc4b6d2acb8ee19ff221dcd3036
+2012-11-26T08:20:15.766431Z
+5
 phycctv
 
 
@@ -636,7 +840,41 @@ phycctv
 
 
 
-1630
+1695
+
+VueRetourExemplaire.java
+file
+
+
+
+
+2012-11-26T08:20:33.000000Z
+5561f5a70ae8cf677368e50780b07e14
+2012-11-26T08:20:15.766431Z
+5
+phycctv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+799
 
 VueSaisieExemplaire.java
 file
@@ -679,8 +917,8 @@ file
 
 
 
-95e7551799edfb68f88d9f16530c9ec8
-2012-11-21T15:48:24.395046Z
-4
+9b99ba22c24d7929e3c945939a0c38a0
+2012-11-26T09:05:50.607005Z
+6
 phycctv
 
